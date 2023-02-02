@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Rock-Paper-Scissors</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>
+            Rock Paper Scissors
+        </h1>
+    </header>
+
+    <!-- MAIN -->
+    <form id="formEins" onsubmit="return false">
+    <main>
+        <!-- Rundenauswahl -->
+        <section>
+            <h2>Wie viele Runden?</h2>
+                <article id="rundenAngabe">
+                    <label for="dreiRunden">3</label>
+                    <input type="radio" name="runden" value="3" id="dreiRunden">
+                    <label for="fuenfRunden">5</label>
+                    <input type="radio" name="runden" value="5" id="fuenfRunden">
+                    <label for="zehnRunden">10</label>
+                    <input type="radio" name="runden" value="10" id="zehnRunden">
+                    <label for="zwanzigRunden">20</label>
+                    <input type="radio" name="runden" value="20" id="zwanzigRunden">
+                 </article>
+                 <p id="gespielteRunden"></p>
+        </section>
+
+        <!-- Punkteausgabe -->
+        <section>
+           <p>Benutzer</p>
+           <p> <span id="benutzerGewinnt">0</span> : <span id="pcGewinnt">0</span></p>
+           <p>PC</p>
+        </section>
+
+        <!-- Spielergebnis und Gewinner Ausgabe + Spielbereich (3 Auswahl Optionen) -->
+        <section>
+            <p id="ergebnisAusgabe"></p>
+            <button id="stein" onclick="steinAuswahl()">✊</button>
+            <button id="papier" onclick="papierAuswahl()">✋</button>
+            <button id="scheere" onclick="scheereAuswahl()">🖖</button>
+            <p>Lass uns spielen</p>
+        </section>        
+    </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <a id="neustarten" href="">Neustart</a>
+        </footer>
+    </form>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
