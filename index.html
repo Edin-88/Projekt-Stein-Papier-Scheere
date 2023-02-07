@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Rock-Paper-Scissors</title>
 </head>
 <body>
@@ -16,8 +15,8 @@
     </header>
 
     <!-- MAIN -->
-    <form id="formEins" onsubmit="return false">
     <main>
+    <form id="formular" onsubmit="return false">
         <!-- Rundenauswahl -->
         <section>
             <h2>Wie viele Runden?</h2>
@@ -36,17 +35,19 @@
 
         <!-- Punkteausgabe -->
         <section>
-           <p>Benutzer</p>
-           <p> <span id="benutzerGewinnt">0</span> : <span id="pcGewinnt">0</span></p>
-           <p>PC</p>
+           <p>Benuter wählt:</p>
+           <p id="benutzerAuswahl"></p>
+           <p id="endErgebnis"> <span id="benutzerGewinnt">0</span> : <span id="pcGewinnt">0</span></p>
+           <p>PC wählt:</p>
+           <p id="pcAuswahl"></p>
         </section>
 
         <!-- Spielergebnis und Gewinner Ausgabe + Spielbereich (3 Auswahl Optionen) -->
         <section>
             <p id="ergebnisAusgabe"></p>
-            <button id="stein" onclick="steinAuswahl()">✊</button>
-            <button id="papier" onclick="papierAuswahl()">✋</button>
-            <button id="scheere" onclick="scheereAuswahl()">🖖</button>
+            <button id="stein">✊</button>
+            <button id="papier">✋</button>
+            <button id="scheere">🖖</button>
             <p>Lass uns spielen</p>
         </section>        
     </main>
